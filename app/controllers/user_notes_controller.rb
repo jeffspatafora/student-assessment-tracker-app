@@ -1,4 +1,5 @@
 class UserNotesController < ApplicationController
+  before_action :authenticate_user
 
   def index
     user_notes = UserNote.all

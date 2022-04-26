@@ -3,13 +3,15 @@ GET http://localhost:3000/user_notes
 
 ### user_note create
 POST http://localhost:3000/user_notes
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE2NTEwMzc4OTB9.Y4xyZv-no5r-FzqXuZWl-yX5yAsK4m_8QOHWinXVaNI
 Content-Type: application/json
 
+
 {
-  "user_id": 3,
-  "student_id": 1,
-  "project_id": 2,
-  "note": "making good progress"
+  "user_id": 5,
+  "student_id": 4,
+  "project_id": 4,
+  "note": "doing fantastic"
 }
 
 
@@ -30,6 +32,6 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "jeff@email.com",
+  "email": "drbrian@email.com",
   "password": "password"
 }

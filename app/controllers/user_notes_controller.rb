@@ -8,7 +8,7 @@ class UserNotesController < ApplicationController
 
   def create
     user_note = UserNote.new(
-      user_id: params[:user_id],
+      user_id: current_user.id,
       student_id: params[:student_id],
       project_id: params[:project_id],
       note: params[:note]

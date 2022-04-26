@@ -6,7 +6,15 @@ class UserNotesController < ApplicationController
   end
 
   def create
-    render json: {message: "in create"}
+    user_note = UserNote.new(
+      user_id: params[:user_id],
+      student_id: params[:student_id],
+      project_id: params[:project_id],
+      note: params[:note]
+    )
+
+    user_note.save
+    render json: user_note.as_json
   end
 
 end

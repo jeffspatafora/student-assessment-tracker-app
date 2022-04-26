@@ -3,6 +3,14 @@ GET http://localhost:3000/user_notes
 
 ### user_note create
 POST http://localhost:3000/user_notes
+Content-Type: application/json
+
+{
+  "user_id": 3,
+  "student_id": 1,
+  "project_id": 2,
+  "note": "making good progress"
+}
 
 
 

@@ -6,4 +6,6 @@ Rails.application.routes.draw do
 
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"
+
+  get "/user_notes" => "user_notes#index"
 end

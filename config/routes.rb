@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   post "/sessions" => "sessions#create"
 
   get "/user_notes" => "user_notes#index"
+  post "/user_notes" => "user_notes#create"
 end

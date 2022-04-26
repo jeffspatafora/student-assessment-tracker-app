@@ -5,4 +5,8 @@ class UserNotesController < ApplicationController
     render json: user_notes.as_json
   end
 
+  def create
+    render json: {message: "in create"}
+  end
+
 end

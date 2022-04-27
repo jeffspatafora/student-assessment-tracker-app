@@ -8,9 +8,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE2NTEwMzc4O
 Content-Type: application/json
 
 {
-  "student_id": 4,
-  "project_id": 4,
-  "note": "doing fantastic"
+  "student_name": "petey",
+  "project_title": "limits",
+  "note": "petey is doing well with limits but just starting out"
 }
 
 

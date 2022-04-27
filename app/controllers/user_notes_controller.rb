@@ -7,10 +7,15 @@ class UserNotesController < ApplicationController
   end
 
   def create
+    student = Student.find_by(name: params[:student_name])
+    # render json: student.as_json
+    project = Project.find_by(title: params[:project_title])
+    # render json: project.as_json
+
     user_note = UserNote.new(
       user_id: current_user.id,
-      student_id: params[:student_id],
-      project_id: params[:project_id],
+      student_id: student.id,
+      project_id: project.id,
       note: params[:note]
     )
 

@@ -1,16 +1,16 @@
 ### user_note index
 GET http://localhost:3000/user_notes
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE2NTEwMzc4OTB9.Y4xyZv-no5r-FzqXuZWl-yX5yAsK4m_8QOHWinXVaNI
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTExMjMxMDF9.65Wwwcb4sRNqXL_UVhkv2a-26UzF7AJKQLBPUGsc6z4
 
 ### user_note create
 POST http://localhost:3000/user_notes
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE2NTEwMzc4OTB9.Y4xyZv-no5r-FzqXuZWl-yX5yAsK4m_8QOHWinXVaNI
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTExMjMxMDF9.65Wwwcb4sRNqXL_UVhkv2a-26UzF7AJKQLBPUGsc6z4
 Content-Type: application/json
 
 {
-  "student_name": "petey",
-  "project_title": "limits",
-  "note": "petey is doing well with limits but just starting out"
+  "student_name": "penny",
+  "project_title": "add",
+  "note": "penny knows how to add very well"
 }
 
 
@@ -31,6 +31,6 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "drbrian@email.com",
+  "email": "drkatie@email.com",
   "password": "password"
 }

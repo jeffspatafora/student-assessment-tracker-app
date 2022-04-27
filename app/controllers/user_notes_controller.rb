@@ -15,7 +15,9 @@ class UserNotesController < ApplicationController
     user_note = UserNote.new(
       user_id: current_user.id,
       student_id: student.id,
+      student_name: student.name,
       project_id: project.id,
+      project_name: project.title,
       note: params[:note]
     )
 

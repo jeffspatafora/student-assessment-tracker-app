@@ -1,10 +1,10 @@
 ### user_note index
-GET http://localhost:3000/user_notes
-Authorization: Bearer
+GET http://localhost:3000/user_notes.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE2NTEzNDU4Mzd9.uK3Y3K-6ZQdKHHMSrRobkRo7_um2T_gcx7SonLmH5ew
 
 ### user_note create
 POST http://localhost:3000/user_notes
-Authorization: Bearer
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE2NTEzNDU4Mzd9.uK3Y3K-6ZQdKHHMSrRobkRo7_um2T_gcx7SonLmH5ew
 Content-Type: application/json
 
 {
@@ -13,6 +13,10 @@ Content-Type: application/json
   "note": "halley has been pushed to his limits by this project"
 }
 
+### user_note show
+GEt http://localhost:3000/user_notes/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE2NTEzNDU4Mzd9.uK3Y3K-6ZQdKHHMSrRobkRo7_um2T_gcx7SonLmH5ew
+
 
 
 ### Users create (signup)
@@ -20,8 +24,8 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Dr Jason",
-  "email": "drjason@email.com",
+  "name": "zoey",
+  "email": "zoey@email.com",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -31,6 +35,6 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "drkatie@email.com",
+  "email": "zoey@email.com",
   "password": "password"
 }

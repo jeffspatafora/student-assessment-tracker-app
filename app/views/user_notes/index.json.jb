@@ -1,0 +1,6 @@
+@user_notes.map do |user_note|
+  {
+    id: user_note.id,
+    url: user_note_url(user_note, format: :json)
+  }
+end

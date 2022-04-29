@@ -9,4 +9,5 @@ Rails.application.routes.draw do
 
   get "/user_notes" => "user_notes#index"
   post "/user_notes" => "user_notes#create"
+  get "/user_notes/:id" => "user_notes#show"
 end

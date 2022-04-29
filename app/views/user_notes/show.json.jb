@@ -1,5 +1,9 @@
 {
   id: @user_note.id,
+  student: @user_note.student.name,
+  studend_email: @user_note.student.email,
+  project: @user_note.project.title,
+  note: @user_note.note,
   created_at: @user_note.created_at,
   updated_at: @user_note.updated_at
 }

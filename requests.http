@@ -14,7 +14,7 @@ Content-Type: application/json
 }
 
 ### user_note show
-GEt http://localhost:3000/user_notes/3
+GEt http://localhost:3000/user_notes/3.json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE2NTEzNDU4Mzd9.uK3Y3K-6ZQdKHHMSrRobkRo7_um2T_gcx7SonLmH5ew
 
 

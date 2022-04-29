@@ -3,8 +3,8 @@ class UserNotesController < ApplicationController
 
   def index
     @user_notes = UserNote.all
-    render json: user_notes.as_json
-    # render template: "user_notes/index"
+    # render json: user_notes.as_json
+    render template: "user_notes/index"
   end
 
   def create
@@ -34,8 +34,9 @@ class UserNotesController < ApplicationController
   end
 
   def show
-    user_note = UserNote.find_by(id: params[:id])
-    render json: user_note.as_json
+    @user_note = UserNote.find_by(id: params[:id])
+    # render json: user_note.as_json
+    render template: "user_notes/show"
   end
 
 end

@@ -1,6 +1,13 @@
 @user_notes.map do |user_note|
   {
     id: user_note.id,
-    url: user_note_url(user_note, format: :json)
+    user_id: user_note.user_id,
+    student_id: user_note.student_id,
+    student: user_note.student.name,
+    project_id: user_note.project_id,
+    project: user_note.project.title,
+    note: user_note.note,
+    created_at: user_note.created_at,
+    updated_at: user_note.updated_at
   }
 end

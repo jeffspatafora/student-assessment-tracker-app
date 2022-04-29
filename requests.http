@@ -1,16 +1,16 @@
 ### user_note index
 GET http://localhost:3000/user_notes
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTExMjMxMDF9.65Wwwcb4sRNqXL_UVhkv2a-26UzF7AJKQLBPUGsc6z4
+Authorization: Bearer
 
 ### user_note create
 POST http://localhost:3000/user_notes
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTExMjMxMDF9.65Wwwcb4sRNqXL_UVhkv2a-26UzF7AJKQLBPUGsc6z4
+Authorization: Bearer
 Content-Type: application/json
 
 {
-  "student_name": "penny",
-  "project_title": "add",
-  "note": "penny knows how to add very well"
+  "student_name": "halley",
+  "project_title": "limits",
+  "note": "halley has been pushed to his limits by this project"
 }
 
 
@@ -20,8 +20,8 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Jeff",
-  "email": "jeff@email.com",
+  "name": "Dr Jason",
+  "email": "drjason@email.com",
   "password": "password",
   "password_confirmation": "password"
 }

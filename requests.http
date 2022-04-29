@@ -8,9 +8,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE2NTEzNDU4M
 Content-Type: application/json
 
 {
-  "student_name": "halley",
-  "project_title": "limits",
-  "note": "halley has been pushed to his limits by this project"
+  "student_id": 1,
+  "project_id": 2,
+  "note": "halley can divide now"
 }
 
 ### user_note show

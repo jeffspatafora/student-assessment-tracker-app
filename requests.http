@@ -1,21 +1,21 @@
 ### user_note index
 GET http://localhost:3000/user_notes.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE2NTEzNDU4Mzd9.uK3Y3K-6ZQdKHHMSrRobkRo7_um2T_gcx7SonLmH5ew
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTE2MTgxMjZ9.hwal9AxDl8_FOcQnjTtuchGHiYEI6_HCuAj9QrDJSGw
 
 ### user_note create
 POST http://localhost:3000/user_notes
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE2NTEzNDU4Mzd9.uK3Y3K-6ZQdKHHMSrRobkRo7_um2T_gcx7SonLmH5ew
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTE2MTgxMjZ9.hwal9AxDl8_FOcQnjTtuchGHiYEI6_HCuAj9QrDJSGw
 Content-Type: application/json
 
 {
-  "student_id": 1,
-  "project_id": 2,
-  "note": "halley can divide now"
+  "student_id": 3,
+  "project_id": 3,
+  "note": "penny is making progress"
 }
 
 ### user_note show
-GEt http://localhost:3000/user_notes/3.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE2NTEzNDU4Mzd9.uK3Y3K-6ZQdKHHMSrRobkRo7_um2T_gcx7SonLmH5ew
+GEt http://localhost:3000/user_notes/16.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTE2MTgxMjZ9.hwal9AxDl8_FOcQnjTtuchGHiYEI6_HCuAj9QrDJSGw
 
 
 
@@ -35,6 +35,6 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "zoey@email.com",
+  "email": "drkatie@email.com",
   "password": "password"
 }

@@ -2,7 +2,7 @@ class UserNotesController < ApplicationController
   before_action :authenticate_user
 
   def index
-    @user_notes = UserNote.all
+    @user_notes = UserNote.where(user_id: current_user.id)
     # render json: user_notes.as_json
     render template: "user_notes/index"
   end

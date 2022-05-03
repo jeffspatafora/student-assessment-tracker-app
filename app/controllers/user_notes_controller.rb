@@ -3,6 +3,7 @@ class UserNotesController < ApplicationController
 
   def index
     @user_notes = UserNote.where(user_id: current_user.id)
+    # @user_notes = UserNote.all
     # render json: user_notes.as_json
     render template: "user_notes/index"
   end

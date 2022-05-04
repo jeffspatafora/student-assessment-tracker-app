@@ -2,6 +2,7 @@
   {
     id: user_note.id,
     user_id: user_note.user_id,
+    user: user_note.user.name,
     student_id: user_note.student_id,
     student: user_note.student.name,
     project_id: user_note.project_id,

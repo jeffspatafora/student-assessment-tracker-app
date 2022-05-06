@@ -1,10 +1,10 @@
 ### user_note index
 GET http://localhost:3000/user_notes.json
-Authorization: Bearer 
+Authorization: Bearer
 
 ### user_note create
 POST http://localhost:3000/user_notes
-Authorization: Bearer 
+Authorization: Bearer
 Content-Type: application/json
 
 {
@@ -14,8 +14,8 @@ Content-Type: application/json
 }
 
 ### user_note show
-GEt http://localhost:3000/user_notes/16.json
-Authorization: Bearer 
+GEt http://localhost:3000/user_notes/21.json
+Authorization: Bearer
 
 
 
@@ -35,6 +35,6 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "drkatie@email.com",
+  "email": "jeff2@email.com",
   "password": "password"
 }

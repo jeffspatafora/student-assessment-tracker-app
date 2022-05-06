@@ -17,6 +17,9 @@ Content-Type: application/json
 GEt http://localhost:3000/user_notes/21.json
 Authorization: Bearer
 
+### students index
+GET http://localhost:3000/students 
+
 
 
 ### Users create (signup)

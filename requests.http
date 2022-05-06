@@ -8,9 +8,9 @@ Authorization: Bearer
 Content-Type: application/json
 
 {
-  "student_id": 3,
-  "project_id": 3,
-  "note": "penny is making progress"
+  "student_name": "petey",
+  "project_title": "limits",
+  "note": "petey is doing well with limits"
 }
 
 ### user_note show
@@ -35,6 +35,6 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "jeff2@email.com",
+  "email": "drkatie@email.com",
   "password": "password"
 }

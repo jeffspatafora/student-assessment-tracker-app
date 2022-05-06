@@ -20,6 +20,15 @@ Authorization: Bearer
 ### students index
 GET http://localhost:3000/students 
 
+### students create
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+  "name": "JOHN T",
+  "email": "faceoff@email.com"
+}
+
 
 
 ### Users create (signup)

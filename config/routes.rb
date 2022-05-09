@@ -15,5 +15,6 @@ Rails.application.routes.draw do
   post "/students" => "students#create"
 
   get "/projects" => "projects#index"
+  post "/projects" => "projects#create"
   
 end

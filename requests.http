@@ -32,6 +32,15 @@ Content-Type: application/json
 ### projects index
 GET http://localhost:3000/projects.json
 
+### project create
+POST http://localhost:3000/projects.json
+Content-Type: application/json 
+
+{
+  "title": "multiplication",
+  "section": "math",
+  "section_number": "382"
+}
 
 
 ### Users create (signup)

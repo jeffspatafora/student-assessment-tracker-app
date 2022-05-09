@@ -29,6 +29,9 @@ Content-Type: application/json
   "email": "faceoff@email.com"
 }
 
+### projects index
+GET http://localhost:3000/projects.json
+
 
 
 ### Users create (signup)

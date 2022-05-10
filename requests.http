@@ -1,5 +1,5 @@
 ### user_note index
-GET http://localhost:3000/user_notes.json
+GET http://localhost:3000/user_notes.json?student_id=4&project_id=4
 Authorization: Bearer
 
 ### user_note create
@@ -17,6 +17,8 @@ Content-Type: application/json
 GEt http://localhost:3000/user_notes/21.json
 Authorization: Bearer
 
+
+
 ### students index
 GET http://localhost:3000/students 
 
@@ -28,6 +30,8 @@ Content-Type: application/json
   "name": "JOHN T",
   "email": "faceoff@email.com"
 }
+
+
 
 ### projects index
 GET http://localhost:3000/projects.json
@@ -59,6 +63,6 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "drkatie@email.com",
+  "email": "drbrian@email.com",
   "password": "password"
 }

@@ -1,6 +1,7 @@
 ### user_note index
 GET http://localhost:3000/user_notes.json?student_id=4&project_id=4
-Authorization: Bearer
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE2NTIzMzU2Mzh9.BOoCMXzOnM76aWqvfs9Tf8ofMUIsvx1mMd2mwgjfWkE
+
 
 ### user_note create
 POST http://localhost:3000/user_notes
@@ -19,8 +20,10 @@ Authorization: Bearer
 
 
 
+
+
 ### students index
-GET http://localhost:3000/students 
+GET http://localhost:3000/students
 
 ### students create
 POST http://localhost:3000/students
@@ -30,6 +33,7 @@ Content-Type: application/json
   "name": "JOHN T",
   "email": "faceoff@email.com"
 }
+
 
 
 
@@ -45,6 +49,9 @@ Content-Type: application/json
   "section": "math",
   "section_number": "382"
 }
+
+
+
 
 
 ### Users create (signup)

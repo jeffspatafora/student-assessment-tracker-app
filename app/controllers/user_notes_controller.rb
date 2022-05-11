@@ -2,9 +2,7 @@ class UserNotesController < ApplicationController
   before_action :authenticate_user
 
   def index
-    student_id = params[:student_id]
-    project_id = params[:project_id]
-    @user_notes = UserNote.where(user_id: current_user.id, student_id: student_id, project_id: project_id)
+    @user_notes = UserNote.where(user_id: current_user.id, student_id: params[:student_id], project_id: params[:project_id])
     render template: "user_notes/index"
   end
 

@@ -1,5 +1,5 @@
 class QuestionsController < ApplicationController
-  def index 
+  def get_question 
 
     session_token_request = HTTP.get("https://opentdb.com/api_token.php?command=request")
     session_token_response = session_token_request.parse(:json)
@@ -10,8 +10,10 @@ class QuestionsController < ApplicationController
 
 
     response = HTTP.get("https://opentdb.com/api.php?amount=1&category=#{category}&difficulty=#{difficulty}&token=#{session_token}")
-    questions = response.parse(:json)
-    render json: {question: questions["results"][0]["question"], answer: questions["results"][0]["correct_answer"]}
+    questions_data = response.parse(:json)
+    question = questions_data["results"][0]["question"]
+    answer = questions_data["results"][0]["correct_answer"]
+    render json: {question: question, answer: answer}
 
   end
 end

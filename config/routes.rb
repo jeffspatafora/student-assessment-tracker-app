@@ -16,5 +16,7 @@ Rails.application.routes.draw do
 
   get "/projects" => "projects#index"
   post "/projects" => "projects#create"
+
+  get "/questions" => "questions#index"
   
 end

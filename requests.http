@@ -53,7 +53,7 @@ Content-Type: application/json
 
 
 ### questions index
-GET http://localhost:3000/questions.json 
+GET http://localhost:3000/questions.json
 
 
 

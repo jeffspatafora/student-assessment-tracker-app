@@ -11,7 +11,7 @@ class QuestionsController < ApplicationController
 
     response = HTTP.get("https://opentdb.com/api.php?amount=1&category=#{category}&difficulty=#{difficulty}&token=#{session_token}")
     questions = response.parse(:json)
-    render json: {message: questions["results"][0]["question"]}
+    render json: {question: questions["results"][0]["question"], answer: questions["results"][0]["correct_answer"]}
 
   end
 end

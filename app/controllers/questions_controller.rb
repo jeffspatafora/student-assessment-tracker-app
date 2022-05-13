@@ -5,7 +5,11 @@ class QuestionsController < ApplicationController
     session_token_response = session_token_request.parse(:json)
     session_token = session_token_response["token"]
 
-    response = HTTP.get("https://opentdb.com/api.php?amount=1&token=#{session_token}")
+    category = 19
+    difficulty = "medium"
+
+
+    response = HTTP.get("https://opentdb.com/api.php?amount=1&category=#{category}&difficulty=#{difficulty}&token=#{session_token}")
     questions = response.parse(:json)
     render json: {message: questions["results"][0]["question"]}
 

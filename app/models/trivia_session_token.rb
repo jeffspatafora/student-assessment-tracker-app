@@ -1,0 +1,2 @@
+class TriviaSessionToken < ApplicationRecord
+end

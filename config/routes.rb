@@ -18,5 +18,7 @@ Rails.application.routes.draw do
   post "/projects" => "projects#create"
 
   get "/questions" => "questions#get_question"
+
+  get "/trivia_session_token" => "trivia_session_token#get_token"
   
 end

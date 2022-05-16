@@ -17,14 +17,13 @@ class QuestionsController < ApplicationController
     all_answers = []
     all_answers << correct_answer
 
-    i = 0
-    while i < incorrect_answers.length
-      all_answers << incorrect_answers[i]
-      i += 1
+    incorrect_answers.each do |incorrect_answer|
+      all_answers << incorrect_answer
     end
 
-    
-    render json: {question: question, type: type, all_answers: all_answers, correct_answer: correct_answer, incorrect_answers: incorrect_answers}
+    possible_answers = all_answers.shuffle
+
+    render json: {question: question, type: type, possible_answers: possible_answers, correct_answer: correct_answer, incorrect_answers: incorrect_answers}
 
   end
 end

@@ -19,6 +19,8 @@ Rails.application.routes.draw do
 
   get "/questions" => "questions#get_question"
 
+  get "/trivia_categories" => "trivia_categories#index"
+
   get "/trivia_session_token" => "trivia_session_token#index"
   post "/trivia_session_token" => "trivia_session_token#create"
   patch "/trivia_session_token" => "trivia_session_token#update"

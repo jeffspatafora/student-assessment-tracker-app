@@ -57,11 +57,14 @@ GET http://localhost:3000/questions.json
 
 
 
-### trivia session token
+### trivia session token index
 GET http://localhost:3000/trivia_session_token.json 
 
 ### trivia session token create
 POST http://localhost:3000/trivia_session_token.json
+
+### trivia session token update
+PATCH http://localhost:3000/trivia_session_token.json 
 
 
 

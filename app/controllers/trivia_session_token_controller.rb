@@ -16,7 +16,15 @@ class TriviaSessionTokenController < ApplicationController
   end
 
   def update
-    render json: {message: "in update token"}
+    new_session_token_request = HTTP.get("https://opentdb.com/api_token.php?command=request")
+    new_session_token_request = new_session_token_request.parse(:json)
+    new_token = new_session_token_request["token"]
+
+    session_token_data = TriviaSessionToken.find_by(id: 2)
+    session_token_data.token = new_token
+    session_token_data.save
+
+    render json: session_token_data.as_json
   end
 
 end

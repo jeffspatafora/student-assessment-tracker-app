@@ -64,7 +64,7 @@ GET http://localhost:3000/trivia_session_token.json
 POST http://localhost:3000/trivia_session_token.json
 
 ### trivia session token update
-PATCH http://localhost:3000/trivia_session_token.json 
+PATCH http://localhost:3000/trivia_session_token.json
 
 
 

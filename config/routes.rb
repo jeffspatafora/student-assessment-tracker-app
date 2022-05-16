@@ -20,5 +20,6 @@ Rails.application.routes.draw do
   get "/questions" => "questions#get_question"
 
   get "/trivia_session_token" => "trivia_session_token#get_token"
+  post "/trivia_session_token" => "trivia_session_token#create_token"
   
 end

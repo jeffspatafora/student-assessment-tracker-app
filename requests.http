@@ -60,6 +60,9 @@ GET http://localhost:3000/questions.json
 ### trivia session token
 GET http://localhost:3000/trivia_session_token.json 
 
+### trivia session token create
+POST http://localhost:3000/trivia_session_token.json
+
 
 
 

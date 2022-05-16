@@ -1,6 +1,6 @@
 ### user_note index
 GET http://localhost:3000/user_notes.json?student_id=4&project_id=4
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE2NTIzMzU2Mzh9.BOoCMXzOnM76aWqvfs9Tf8ofMUIsvx1mMd2mwgjfWkE
+Authorization: Bearer 
 
 
 ### user_note create

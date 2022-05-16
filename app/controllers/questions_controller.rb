@@ -4,8 +4,8 @@ class QuestionsController < ApplicationController
     session_token_data = TriviaSessionToken.find_by(id: 2)
     session_token = session_token_data[:token]
 
-    category = 19
-    difficulty = "medium"
+    category = params[:category_id]
+    difficulty = params[:difficulty]
 
 
     response = HTTP.get("https://opentdb.com/api.php?amount=1&category=#{category}&difficulty=#{difficulty}&token=#{session_token}")
@@ -26,4 +26,6 @@ class QuestionsController < ApplicationController
     render json: {question: question, type: type, possible_answers: possible_answers, correct_answer: correct_answer, incorrect_answers: incorrect_answers}
 
   end
+
+
 end

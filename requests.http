@@ -52,8 +52,8 @@ Content-Type: application/json
 
 
 
-### questions index
-GET http://localhost:3000/questions.json
+### get_question
+GET http://localhost:3000/questions.json?category_id=12&difficulty=medium
 
 
 

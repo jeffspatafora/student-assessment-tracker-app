@@ -53,7 +53,7 @@ Content-Type: application/json
 
 
 ### get_question
-GET http://localhost:3000/questions.json?category_id=19&difficulty=medium
+GET http://localhost:3000/questions.json?category_id=&difficulty=
 
 
 ### trivia_categories_index

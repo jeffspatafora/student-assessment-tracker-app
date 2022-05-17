@@ -11,15 +11,26 @@ class QuestionsController < ApplicationController
 
     response = HTTP.get("https://opentdb.com/api.php?amount=1&category=#{category}&difficulty=#{difficulty}&token=#{session_token}")
     questions_data = response.parse(:json)
+
     type = questions_data["results"][0]["type"]
+
     question = questions_data["results"][0]["question"]
     p question
-
     question = coder.decode(question)
     p question
 
     correct_answer = questions_data["results"][0]["correct_answer"]
+    p correct_answer
+    correct_answer = coder.decode(correct_answer)
+    p correct_answer
+
     incorrect_answers = questions_data["results"][0]["incorrect_answers"]
+    p incorrect_answers
+    incorrect_answers.each do |incorrect_answer|
+      coder.decode(incorrect_answer)
+    end
+    p incorrect_answers 
+
     all_answers = []
     all_answers << correct_answer
 

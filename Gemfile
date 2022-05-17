@@ -49,3 +49,4 @@ end
 gem 'jwt'
 gem 'jb'
 gem 'http'
+gem 'htmlentities'

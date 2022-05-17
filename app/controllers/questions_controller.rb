@@ -5,6 +5,10 @@ class QuestionsController < ApplicationController
     session_token = session_token_data[:token]
 
     category = params[:category_id]
+    if category.to_i == 1
+      category = ""
+    end
+    p category
     difficulty = params[:difficulty]
 
     coder = HTMLEntities.new

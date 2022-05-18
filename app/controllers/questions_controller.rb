@@ -30,21 +30,22 @@ class QuestionsController < ApplicationController
 
     incorrect_answers = questions_data["results"][0]["incorrect_answers"]
     p incorrect_answers
+    decoded_incorrect_answers = []
     incorrect_answers.each do |incorrect_answer|
-      coder.decode(incorrect_answer)
+      decoded_incorrect_answers << coder.decode(incorrect_answer)
     end
-    p incorrect_answers 
+    p decoded_incorrect_answers 
 
     all_answers = []
     all_answers << correct_answer
 
-    incorrect_answers.each do |incorrect_answer|
-      all_answers << incorrect_answer
+    decoded_incorrect_answers.each do |decoded_incorrect_answer|
+      all_answers << decoded_incorrect_answer
     end
 
     possible_answers = all_answers.shuffle
 
-    render json: {question: question, type: type, possible_answers: possible_answers, correct_answer: correct_answer, incorrect_answers: incorrect_answers}
+    render json: {question: question, type: type, possible_answers: possible_answers, correct_answer: correct_answer, decoded_incorrect_answers: decoded_incorrect_answers}
 
   end
 

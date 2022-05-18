@@ -1,5 +1,6 @@
 class StudentsController < ApplicationController
-  
+  before_action :authenticate_user
+
   def index
     students = Student.all
     render json: students.as_json 
@@ -7,6 +8,7 @@ class StudentsController < ApplicationController
 
   def create
     student = Student.new(
+      user_id: current_user.id,
       name: params[:name].downcase,
       email: params[:email]
     )

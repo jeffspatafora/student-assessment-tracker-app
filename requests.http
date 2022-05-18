@@ -24,14 +24,16 @@ Authorization: Bearer
 
 ### students index
 GET http://localhost:3000/students
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTI5NDA2MjF9.GXVRhM6ipWptiQV379zeROSAmVMukdlrK7R_zQH-Z6Q
 
 ### students create
 POST http://localhost:3000/students
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTI5NDA2MjF9.GXVRhM6ipWptiQV379zeROSAmVMukdlrK7R_zQH-Z6Q
 Content-Type: application/json
 
 {
-  "name": "JOHN T",
-  "email": "faceoff@email.com"
+  "name": "ally",
+  "email": "ally@email.com"
 }
 
 
@@ -90,6 +92,6 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "drbrian@email.com",
+  "email": "drkatie@email.com",
   "password": "password"
 }

@@ -5,7 +5,7 @@ Authorization: Bearer
 
 ### user_note create
 POST http://localhost:3000/user_notes
-Authorization: Bearer
+Authorization: Bearer 
 Content-Type: application/json
 
 {
@@ -16,7 +16,7 @@ Content-Type: application/json
 
 ### user_note show
 GEt http://localhost:3000/user_notes/21.json
-Authorization: Bearer
+Authorization: Bearer 
 
 
 
@@ -24,11 +24,11 @@ Authorization: Bearer
 
 ### students index
 GET http://localhost:3000/students
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTI5NDA2MjF9.GXVRhM6ipWptiQV379zeROSAmVMukdlrK7R_zQH-Z6Q
+Authorization: Bearer 
 
 ### students create
 POST http://localhost:3000/students
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTI5NDA2MjF9.GXVRhM6ipWptiQV379zeROSAmVMukdlrK7R_zQH-Z6Q
+Authorization: Bearer 
 Content-Type: application/json
 
 {
@@ -41,13 +41,15 @@ Content-Type: application/json
 
 ### projects index
 GET http://localhost:3000/projects.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTI5Nzk2NDN9.Hfu4d5j1GUdiORDtq8lX9foyPQ6s-h8hpTNNppQFofA
 
 ### project create
 POST http://localhost:3000/projects.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTI5Nzk2NDN9.Hfu4d5j1GUdiORDtq8lX9foyPQ6s-h8hpTNNppQFofA
 Content-Type: application/json 
 
 {
-  "title": "multiplication",
+  "title": "test project",
   "section": "math",
   "section_number": "382"
 }

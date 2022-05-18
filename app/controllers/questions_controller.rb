@@ -8,7 +8,6 @@ class QuestionsController < ApplicationController
     if category == "1"
       category = ""
     end
-    p category
     difficulty = params[:difficulty]
 
     coder = HTMLEntities.new
@@ -19,22 +18,16 @@ class QuestionsController < ApplicationController
     type = questions_data["results"][0]["type"]
 
     question = questions_data["results"][0]["question"]
-    p question
     question = coder.decode(question)
-    p question
 
     correct_answer = questions_data["results"][0]["correct_answer"]
-    p correct_answer
     correct_answer = coder.decode(correct_answer)
-    p correct_answer
 
     incorrect_answers = questions_data["results"][0]["incorrect_answers"]
-    p incorrect_answers
     decoded_incorrect_answers = []
     incorrect_answers.each do |incorrect_answer|
       decoded_incorrect_answers << coder.decode(incorrect_answer)
-    end
-    p decoded_incorrect_answers 
+    end 
 
     all_answers = []
     all_answers << correct_answer

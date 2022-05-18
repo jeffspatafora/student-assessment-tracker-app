@@ -2,7 +2,7 @@ class UserNotesController < ApplicationController
   before_action :authenticate_user
 
   def index
-    @user_notes = UserNote.where(user_id: current_user.id, student_id: params[:student_id], project_id: params[:project_id])
+    @user_notes = UserNote.where(user_id: current_user.id, student_id: params[:student_id], project_id: params[:project_id]).order(created_at: :desc)
     render template: "user_notes/index"
   end
 
@@ -17,7 +17,7 @@ class UserNotesController < ApplicationController
       note: params[:note]
     )
 
-    user_note.save!
+    user_note.save
     render json: user_note.as_json
   end
 

@@ -2,7 +2,7 @@ class StudentsController < ApplicationController
   before_action :authenticate_user
 
   def index
-    students = Student.all
+    students = Student.where(user_id: current_user.id)
     render json: students.as_json 
   end
 

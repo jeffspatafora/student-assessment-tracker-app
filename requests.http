@@ -37,17 +37,18 @@ Content-Type: application/json
 }
 
 ### student show
-GET http://localhost:3000/students/:id
+GET http://localhost:3000/students/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTUyMzAyOTN9.ovrLMmPSiCM_IFWd-eI6hUKKsnXXAMwdEUfm2P_OIYQ
 
 
 
 ### projects index
 GET http://localhost:3000/projects.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTI5Nzk2NDN9.Hfu4d5j1GUdiORDtq8lX9foyPQ6s-h8hpTNNppQFofA
+Authorization: Bearer 
 
 ### project create
 POST http://localhost:3000/projects.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTI5Nzk2NDN9.Hfu4d5j1GUdiORDtq8lX9foyPQ6s-h8hpTNNppQFofA
+Authorization: Bearer 
 Content-Type: application/json 
 
 {

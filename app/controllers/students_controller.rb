@@ -1,5 +1,5 @@
 class StudentsController < ApplicationController
-  # before_action :authenticate_user
+  before_action :authenticate_user
 
   def index
     students = Student.where(user_id: current_user.id)
@@ -18,6 +18,7 @@ class StudentsController < ApplicationController
   end
 
   def show
-    render json: {message: "in students show"}
+    student = Student.where(user_id: current_user, id: params[:id])
+    render json: student.as_json 
   end
 end

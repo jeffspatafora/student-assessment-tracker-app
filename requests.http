@@ -26,7 +26,7 @@ Authorization: Bearer
 GET http://localhost:3000/students
 Authorization: Bearer 
 
-### students create
+### student create
 POST http://localhost:3000/students
 Authorization: Bearer 
 Content-Type: application/json
@@ -36,6 +36,8 @@ Content-Type: application/json
   "email": "ally@email.com"
 }
 
+### student show
+GET http://localhost:3000/students/:id
 
 
 

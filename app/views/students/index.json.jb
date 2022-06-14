@@ -1,0 +1,5 @@
+@students.map do |student|
+  {
+    id: student.id
+  }
+end

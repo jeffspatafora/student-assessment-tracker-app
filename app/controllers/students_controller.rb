@@ -18,7 +18,8 @@ class StudentsController < ApplicationController
   end
 
   def show
-    student = Student.where(user_id: current_user, id: params[:id])
-    render json: student.as_json 
+    @student = Student.find_by(user_id: current_user.id, id: params[:id])
+    # render json: student.as_json 
+    render template: "students/show"
   end
 end

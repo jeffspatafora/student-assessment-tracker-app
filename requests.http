@@ -15,7 +15,7 @@ Content-Type: application/json
 }
 
 ### user_note show
-GEt http://localhost:3000/user_notes/21.json
+GEt http://localhost:3000/user_notes/79.json
 Authorization: Bearer 
 
 
@@ -37,8 +37,8 @@ Content-Type: application/json
 }
 
 ### student show
-GET http://localhost:3000/students/2
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTUyMzAyOTN9.ovrLMmPSiCM_IFWd-eI6hUKKsnXXAMwdEUfm2P_OIYQ
+GET http://localhost:3000/students/4.json
+Authorization: Bearer 
 
 
 

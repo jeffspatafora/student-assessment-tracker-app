@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   post "/user_notes" => "user_notes#create"
   get "/user_notes/:id" => "user_notes#show"
 
+  post "/student_works" => "student_works#create"
+
   get "/students" => "students#index"
   post "/students" => "students#create"
   get "/students/:id" => "students#show"

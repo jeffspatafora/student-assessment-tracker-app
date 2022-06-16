@@ -15,9 +15,16 @@ Content-Type: application/json
 }
 
 ### user_note show
-GEt http://localhost:3000/user_notes/79.json
+GET http://localhost:3000/user_notes/79.json
 Authorization: Bearer 
 
+### student_works create
+POST http://localhost:3000/student_works
+Content-Type: application/json
+
+{
+  "image": "/Users/jefferyspatafora/Desktop/IMG_4967.jpg"
+}
 
 
 

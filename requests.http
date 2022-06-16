@@ -24,8 +24,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTU0NDM2M
 Content-Type: application/json
 
 {
-  "student_id": 3,
-  "project_id": 1,
+  "student_name": "penny",
+  "project_title": "math",
   "description": "this is a photo of a cat",
   "image": "/Users/jefferyspatafora/Desktop/IMG_2859.jpg"
 }

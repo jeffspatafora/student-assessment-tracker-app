@@ -5,10 +5,14 @@ class StudentWorksController < ApplicationController
     # binding.pry
     response = Cloudinary::Uploader.upload(params[:image], resource_type: :auto)
     cloudinary_url = response["secure_url"]
+
+    student = Student.find_by(name: params[:student_name].downcase)
+    project = Project.find_by(title: params[:project_title].downcase)
+    
     student_work = StudentWork.create!(
       user_id: current_user.id,
-      student_id: params[:student_id],
-      project_id: params[:project_id],
+      student_id: student.id,
+      project_id: project.id,
       description: params[:description],
       image: cloudinary_url
     )

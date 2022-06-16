@@ -1,6 +1,6 @@
 class StudentWorksController < ApplicationController
   before_action :authenticate_user
-  
+
   def create
     # binding.pry
     response = Cloudinary::Uploader.upload(params[:image], resource_type: :auto)
@@ -9,6 +9,7 @@ class StudentWorksController < ApplicationController
       user_id: current_user.id,
       student_id: params[:student_id],
       project_id: params[:project_id],
+      description: params[:description],
       image: cloudinary_url
     )
 

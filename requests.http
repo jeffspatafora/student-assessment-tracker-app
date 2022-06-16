@@ -26,7 +26,8 @@ Content-Type: application/json
 {
   "student_id": 3,
   "project_id": 1,
-  "image": "/Users/jefferyspatafora/Desktop/IMG_4967.jpg"
+  "description": "this is a photo of a cat",
+  "image": "/Users/jefferyspatafora/Desktop/IMG_2859.jpg"
 }
 
 

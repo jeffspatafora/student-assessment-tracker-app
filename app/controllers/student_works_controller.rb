@@ -2,7 +2,9 @@ class StudentWorksController < ApplicationController
   before_action :authenticate_user
 
   def index
-    render json: {message: "student work index"}
+    student_works = StudentWork.where(user_id: current_user.id, student_id: params[:student_id], project_id: params[:project_id])
+
+    render json: student_works.as_json 
   end
 
   def create

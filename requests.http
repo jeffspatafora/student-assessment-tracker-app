@@ -20,7 +20,7 @@ Authorization: Bearer
 
 
 ### student_works index
-GET http://localhost:3000/student_works
+GET http://localhost:3000/student_works?student_id=3&project_id=15
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTU1Mjg1ODR9.Ymqu8zX89lvFiIKwXiD89Zp7tbKnOgM_NmDp2ZqUR1Q
 
 

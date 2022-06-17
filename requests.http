@@ -18,9 +18,15 @@ Content-Type: application/json
 GET http://localhost:3000/user_notes/79.json
 Authorization: Bearer 
 
-### student_works create
+
+### student_works index
+GET http://localhost:3000/student_works
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTU1Mjg1ODR9.Ymqu8zX89lvFiIKwXiD89Zp7tbKnOgM_NmDp2ZqUR1Q
+
+
+### student_work create
 POST http://localhost:3000/student_works
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTU0NDM2MDJ9.-4I8W0Br3WkpbH1VXp9B9lrwuXs5jVkqMcrDv0jc8-U
+Authorization: Bearer 
 Content-Type: application/json
 
 {

@@ -28,6 +28,10 @@ class StudentWorksController < ApplicationController
   end
 
   def destroy
-    render json: {message: "in student work destroy"}
+    student_work = StudentWork.find_by(id: params[:id])
+    # response = Cloudinary::Uploader.destroy()
+    student_work.destroy
+    render json: {message: "student work removed"}
   end
+
 end

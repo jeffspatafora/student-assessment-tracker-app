@@ -21,24 +21,24 @@ Authorization: Bearer
 
 ### student_works index
 GET http://localhost:3000/student_works?student_id=3&project_id=15
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTU1Mjg1ODR9.Ymqu8zX89lvFiIKwXiD89Zp7tbKnOgM_NmDp2ZqUR1Q
+Authorization: Bearer 
 
 
 ### student_work create
 POST http://localhost:3000/student_works
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTU2NjM1MDR9.SIx8dF9zpSDAVDTD3qKufPVqhD_5wkbM2AHNdbbMqT8
 Content-Type: application/json
 
 {
   "student_name": "penny",
-  "project_title": "math",
+  "project_title": "add",
   "description": "this is a photo of a cat",
   "image": "/Users/jefferyspatafora/Desktop/IMG_2859.jpg"
 }
 
 ### student_work destroy
-DELETE http://localhost:3000/student_works/1
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTU1Mjg1ODR9.Ymqu8zX89lvFiIKwXiD89Zp7tbKnOgM_NmDp2ZqUR1Q
+DELETE http://localhost:3000/student_works/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTU2NjM1MDR9.SIx8dF9zpSDAVDTD3qKufPVqhD_5wkbM2AHNdbbMqT8
 
 
 ### students index

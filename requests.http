@@ -36,6 +36,9 @@ Content-Type: application/json
   "image": "/Users/jefferyspatafora/Desktop/IMG_2859.jpg"
 }
 
+### student_work destroy
+DELETE http://localhost:3000/student_works/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTU1Mjg1ODR9.Ymqu8zX89lvFiIKwXiD89Zp7tbKnOgM_NmDp2ZqUR1Q
 
 
 ### students index

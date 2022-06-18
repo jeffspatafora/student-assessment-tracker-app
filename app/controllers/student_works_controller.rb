@@ -26,4 +26,8 @@ class StudentWorksController < ApplicationController
     # student_work.save
     render json: student_work
   end
+
+  def destroy
+    render json: {message: "in student work destroy"}
+  end
 end

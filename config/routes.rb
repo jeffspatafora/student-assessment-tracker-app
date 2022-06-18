@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
   get "/student_works" => "student_works#index"
   post "/student_works" => "student_works#create"
+  delete "/student_works/:id" => "student_works#destroy"
 
   get "/students" => "students#index"
   post "/students" => "students#create"

@@ -3,6 +3,8 @@
   name: @student.name,
   email: @student.email,
   user_id: @student.user_id,
+  cloudinary_image_public_id: @student.cloudinary_image_public_id,
+  cloudinary_image_url: @student.cloudinary_image_url,
   created_at: @student.created_at,
   updated_at: @student.updated_at
 }

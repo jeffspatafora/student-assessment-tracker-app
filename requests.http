@@ -22,6 +22,11 @@ Authorization: Bearer
 ### user_note update
 PATCH http://localhost:3000/user_notes/17.json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTU5MjMzMzR9.LEt11KPo-h275-hmeiddxk8P2sxDO2o8W-6WimXeZOA
+Content-Type: application/json
+
+{
+  "note": "this is a test of the update"
+}
 
 
 ### student_works index

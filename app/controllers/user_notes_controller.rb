@@ -23,11 +23,8 @@ class UserNotesController < ApplicationController
 
   def show
     @user_note = UserNote.find_by(id: params[:id])
-    if @user_note.user_id == current_user.id
-      render template: "user_notes/show"
-    else
-      render json: {message: "note doesn't belong to you"}
-    end
+    
+    render template: "user_notes/show"
   end
 
   def update
@@ -37,7 +34,6 @@ class UserNotesController < ApplicationController
     @user_note.save!
 
     render template: "user_notes/show"
-
   end
 
 end

@@ -19,6 +19,11 @@ GET http://localhost:3000/user_notes/79.json
 Authorization: Bearer 
 
 
+### user_note update
+PATCH http://localhost:3000/user_notes/17.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTU5MjMzMzR9.LEt11KPo-h275-hmeiddxk8P2sxDO2o8W-6WimXeZOA
+
+
 ### student_works index
 GET http://localhost:3000/student_works?student_id=3&project_id=15
 Authorization: Bearer 
@@ -47,7 +52,7 @@ Authorization: Bearer
 
 ### student create
 POST http://localhost:3000/students
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTU2Njk1MjB9.6GYpFO0VyfCetQri-83fO42Eo8FD6W--Z4DwLyvs8Kc
+Authorization: Bearer 
 Content-Type: application/json
 
 {
@@ -58,7 +63,7 @@ Content-Type: application/json
 
 ### student show
 GET http://localhost:3000/students/29.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTU2Njk1MjB9.6GYpFO0VyfCetQri-83fO42Eo8FD6W--Z4DwLyvs8Kc
+Authorization: Bearer 
 
 
 

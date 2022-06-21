@@ -30,4 +30,9 @@ class UserNotesController < ApplicationController
     end
   end
 
+  def update
+    @user_note = UserNote.find_by(id: params[:id])
+    render json: "in update"
+  end
+
 end

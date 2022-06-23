@@ -1,5 +1,5 @@
 ### user_note index
-GET http://localhost:3000/user_notes.json?student_id=4&project_id=4
+GET http://localhost:3000/user_notes.json?student_id=40&project_id=39
 Authorization: Bearer 
 
 
@@ -16,12 +16,12 @@ Content-Type: application/json
 
 ### user_note show
 GET http://localhost:3000/user_notes/17.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTU5MjMzMzR9.LEt11KPo-h275-hmeiddxk8P2sxDO2o8W-6WimXeZOA
+Authorization: Bearer 
 
 
 ### user_note update
 PATCH http://localhost:3000/user_notes/17.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTU5MjMzMzR9.LEt11KPo-h275-hmeiddxk8P2sxDO2o8W-6WimXeZOA
+Authorization: Bearer 
 Content-Type: application/json
 
 {
@@ -127,6 +127,6 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "drkatie@email.com",
+  "email": "jeff.spatafora@email.com",
   "password": "password"
 }

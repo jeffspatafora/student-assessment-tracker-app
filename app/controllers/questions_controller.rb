@@ -1,7 +1,7 @@
 class QuestionsController < ApplicationController
   def get_question 
 
-    session_token_data = TriviaSessionToken.find_by(id: 2)
+    session_token_data = TriviaSessionToken.last 
     session_token = session_token_data[:token]
 
     category = params[:category_id]
